@@ -12,6 +12,22 @@ html[dir='rtl'] {
   direction: rtl;
   text-align: right;
 
+  .pagination {
+    direction: ltr;
+  }
+
+  .post-navigation .btn:first-child {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .post-navigation .btn:last-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .code-header::before {
+    display: none;
+  }
+
   /* Sidebar */
   #sidebar {
     left: auto;
@@ -39,6 +55,10 @@ html[dir='rtl'] {
         margin-right: 0;
         margin-left: 1.5rem;
       }
+    }
+
+    .nav-item {
+      margin-right: 0;
     }
 
     .sidebar-bottom {

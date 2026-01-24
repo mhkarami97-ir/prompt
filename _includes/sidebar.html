@@ -61,15 +61,7 @@
           {%- endunless -%}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
-          {%- endcapture -%}
-        {% when 'email' %}
-          {%- unless site.social.email -%}
-            {%- continue -%}
-          {%- endunless -%}
-          {%- assign email = site.social.email | split: '@' -%}
-          {%- capture url -%}
-            https://mhkarami97.ir
-          {%- endcapture -%}
+          {%- endcapture -%}      
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}
         {% else %}

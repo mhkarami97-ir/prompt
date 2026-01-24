@@ -1,23 +1,17 @@
-# The Site Configuration
-
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# The language of the webpage
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# otherwise, the layout language will use the default value of 'en'
 lang: fa-IR
 
-# Change to your timezone › https://zones.arilyn.cc
+# Change to your timezone
 timezone: Asia/Tehran
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
+# jekyll-seo-tag settings
 title: پرامپ # the main title
-
 tagline: لیست پرامپ # it will display as the subtitle
-
 description: >- # used by seo meta and the atom feed
   Prompt List
 
@@ -38,11 +32,9 @@ social:
   email: mhkarami97@gmail.com
   links:
     # The first element serves as the copyright owner's link
-    - https://mhkarami97.ir # change to your Twitter homepage
-    #- https://github.com/username # change to your GitHub homepage
+    - https://mhkarami97.ir
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
@@ -52,9 +44,6 @@ webmaster_verifications:
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
   facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
 
 # Web Analytics Settings
 analytics:
@@ -78,22 +67,17 @@ pageviews:
   provider: # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
-#
 # Note: Keep empty will follow the system prefer color by default,
 # and there will be a toggle to switch the theme between dark and light
 # on the bottom left of the sidebar.
-#
 # Available options:
-#
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
-#
-theme_mode: light
+theme_mode:
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
 # e.g. 'https://cdn.com'
 cdn:
 
@@ -102,22 +86,29 @@ avatar: /assets/img/my.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: "/assets/img/favicons/favicon.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+# Page on home page
+paginate: 10
+
+# The base URL of your site
+baseurl: ""
+
+# Comment on post
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
+    shortname: # fill with the Disqus shortname
+  # utterances settings
   utterances:
     repo: # <gh-username>/<repo>
     issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+  # Giscus options
   giscus:
     repo: # <gh-username>/<repo>
     repo_id:
@@ -129,7 +120,7 @@ comments:
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+# Self-hosted static assets, optional
 assets:
   self_host:
     enabled: # boolean, keep empty means false
@@ -137,8 +128,9 @@ assets:
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
 
+# PWA feature
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: true
   cache:
     enabled: true # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
@@ -147,17 +139,11 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
-
-# The base URL of your site
-baseurl: ""
-
-# ------------ The following options are not recommended to be modified ------------------
-
+# The following options are not recommended to be modified
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge Options
     css_class: highlight
     # default_lang: console
     span:
