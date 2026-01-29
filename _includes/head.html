@@ -72,13 +72,13 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   {% endunless %}
 
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
+
   {% if dir and dir contains 'rtl' %}
     <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   {% endif %}
-
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
 
   <!-- Web Font -->
   <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
