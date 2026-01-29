@@ -1,0 +1,19 @@
+.pagination {
+  direction: ltr;
+}
+
+.post-navigation .btn:first-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.post-navigation .btn:last-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.code-header::before {
+  display: none;
+}
+
+.nav-item {
+  margin-right: 0;
+}
