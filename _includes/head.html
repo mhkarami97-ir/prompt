@@ -72,11 +72,14 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   {% endunless %}
 
+  {% if dir and dir contains 'rtl' %}
+    <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
+  {% endif %}
+
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
 
   {% if dir and dir contains 'rtl' %}
-    <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   {% endif %}
 
