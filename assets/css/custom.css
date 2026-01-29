@@ -11,7 +11,7 @@
 }
 
 .code-header::before {
-  display: none;
+  display: none !important;
 }
 
 .nav-item {
