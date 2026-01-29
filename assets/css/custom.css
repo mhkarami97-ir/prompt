@@ -17,3 +17,11 @@
 .nav-item {
   margin-right: 0;
 }
+
+#sidebar .site-title {
+  font-weight: 700;
+}
+
+#sidebar .site-subtitle {
+  text-align: center;
+}
